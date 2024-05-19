@@ -18,8 +18,7 @@ python -m streamlit run app.py
 # Trash classes
 
 - Recyclable
-- Orgainic
-- Trash
+- Garbage
 
 # Link to Youtube Demo
 https://www.youtube.com/watch?v=VoDxWJuNdtI
