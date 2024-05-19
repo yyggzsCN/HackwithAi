@@ -21,6 +21,8 @@ python -m streamlit run app.py
 - Orgainic
 - Trash
 
+# Link to Youtube Demo
+https://www.youtube.com/watch?v=VoDxWJuNdtI
 
 
 # Citation
