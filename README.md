@@ -9,4 +9,7 @@ create opencv that can access the camera, capture the image every FPS.
 
 Train the detecting "trash" training model.
 
+# Trash classes
 
+- Recyclable
+- Orgainic
