@@ -1,3 +1,4 @@
+# This model is trained using the garbage classification 3 dataset from Kaggle
 import tensorflow as tf
 import pandas as pd
 import matplotlib.pyplot as plt
