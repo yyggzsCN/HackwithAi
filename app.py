@@ -13,6 +13,9 @@ if uploaded_file is not None:
         if API_KEY.strip() == '':
             st.error('Enter a valid API key')
         else:
+            # Create the temp directory if it doesn't exist
+            os.makedirs("temp", exist_ok=True)
+            
             file_path = os.path.join("temp", uploaded_file.name)
             with open(file_path, "wb") as f:
                 f.write(uploaded_file.getvalue())
