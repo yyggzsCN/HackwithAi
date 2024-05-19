@@ -2,54 +2,75 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #56ccf2, #2f80ed); /* Gradient background */
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: linear-gradient(135deg, #23bdb8, #43e97b);
+    color: white;
 }
 
 .container {
-    background-color: #fff;
-    border-radius: 20px; /* Rounded corners */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Box shadow */
-    padding: 20px;
     text-align: center;
+    padding: 20px;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    margin-bottom: 20px;
 }
 
 .video-container {
-    display: inline-block;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Box shadow */
-}
-
-#video {
-    width: 100%;
-    height: auto;
+    margin-bottom: 20px;
 }
 
 .overlay-text {
+    position: relative;
+}
+
+#status {
+    font-size: 18px;
+}
+
+.button-container {
+    margin-bottom: 20px;
+}
+
+.popup-container {
+    margin-bottom: 20px;
+}
+
+.popup {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
     border-radius: 10px;
-    animation: pulse 2s infinite alternate;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    text-align: center;
+    display: none;
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.1);
-    }
+.popup p {
+    margin: 0;
+}
+
+.popup-button {
+    background-color: #23bdb8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup-button:hover {
+    background-color: #43e97b;
+}
+
+#video {
+    display: block;
+    margin: 0 auto;
+    width: 80%; /* Adjust the size as needed */
+    max-width: 800px; /* Maximum width */
+    height: auto;
 }

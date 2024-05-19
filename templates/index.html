@@ -13,8 +13,31 @@
             <img id="video" src="{{ url_for('video_feed') }}" alt="Camera Feed">
         </div>
         <div class="overlay-text">
-            <p>Scanning for garbage...</p>
+            <p id="status">Scanning for garbage...</p>
+            <div class="button-container">
+                <button id="toggleButton" onclick="toggleCamera()">Toggle Camera</button>
+            </div>
+            <div class="popup-container">
+                <p id="description">Our app helps keep the environment clean by detecting and identifying garbage.</p>
+            </div>
         </div>
     </div>
+
+    <script>
+        function toggleCamera() {
+            var videoElement = document.getElementById('video');
+            var statusElement = document.getElementById('status');
+            var descriptionElement = document.getElementById('description');
+            if (videoElement.style.display === 'none') {
+                videoElement.style.display = 'block';
+                statusElement.innerText = 'Scanning for garbage...';
+                descriptionElement.innerText = 'Our app helps keep the environment clean by detecting and identifying garbage.';
+            } else {
+                videoElement.style.display = 'none';
+                statusElement.innerText = 'Camera turned off';
+                descriptionElement.innerText = 'Learn more about how our app helps the world!';
+            }
+        }
+    </script>
 </body>
 </html>
