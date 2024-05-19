@@ -9,7 +9,11 @@ create opencv that can access the camera, capture the image every FPS.
 
 Train the detecting "trash" training model.
 
-# Trash classes
+# Using Image Caption
+Make sure pillow, google-generativeai, and streamlit are downloaded, then run with: 
+```
+python -m streamline run app.py
+```# Trash classes
 
 - Recyclable
 - Orgainic

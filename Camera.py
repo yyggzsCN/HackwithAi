@@ -2,7 +2,7 @@ import os
 
 import cv2
 
-camera_version = 1
+camera_version = 0
 
 cap = cv2.VideoCapture(camera_version)
 
