@@ -18,6 +18,9 @@
                 <button id="toggleButton" onclick="toggleCamera()">Toggle Camera</button>
                 <button onclick="window.location.href='https://imagetagger-demo.streamlit.app/'" class="button">Upload A Photo Instead</button>
             </div>
+            <div class="button-container">
+                <button onclick="sendButtonClick()">Print to Terminal</button>
+            </div>
             <div class="popup-container">
                 <p id="description">Our app helps keep the environment clean by detecting and identifying garbage.</p>
             </div>
@@ -38,6 +41,18 @@
                 statusElement.innerText = 'Camera turned off';
                 descriptionElement.innerText = 'Learn more about how our app helps the world!';
             }
+        }
+
+        function sendButtonClick() {
+            fetch('/button_click', {
+                method: 'POST'
+            }).then(response => {
+                if (response.ok) {
+                    console.log('Button click sent to server');
+                } else {
+                    console.error('Failed to send button click');
+                }
+            });
         }
     </script>
 </body>
