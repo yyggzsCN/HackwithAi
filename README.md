@@ -12,13 +12,16 @@ Train the detecting "trash" training model.
 # Using Image Caption
 Make sure pillow, google-generativeai, and streamlit are downloaded, then run with: 
 ```
-python -m streamline run app.py
+python -m streamlit run app.py
 ```
 
 # Trash classes
 
 - Recyclable
 - Orgainic
+- Trash
+
+
 
 # Citation
 
