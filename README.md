@@ -13,7 +13,9 @@ Train the detecting "trash" training model.
 Make sure pillow, google-generativeai, and streamlit are downloaded, then run with: 
 ```
 python -m streamline run app.py
-```# Trash classes
+```
+
+# Trash classes
 
 - Recyclable
 - Orgainic
